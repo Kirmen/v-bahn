@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title id="home1">V-BAHN : Home</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/browser.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-blue position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-blue navbar-light shadow border-top border-5 border-primary sticky-top p-0 ">
+        <a href="index.html" class="navbar-brand bg-primary d-flex align-items-center px-4 px-lg-5">
+            <img style=" width:auto;height:65px;" src="img/logo.png" alt="">
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+
+
+                <a href="#" class="nav-item nav-link active" id="home">Home</a>
+                <a href="about.html" class="nav-item nav-link" id="company">Company</a>
+                <!-- <a href="about.html?lang=de" class="nav-item nav-link">Unternehmen</a> -->
+                <a href="products.html" class="nav-item nav-link" id="products">Products</a>
+                <a href="partners.html" class="nav-item nav-link" id="partners">Partners</a>
+                <a href="projects.html" class="nav-item nav-link" id="projects">Projects</a>
+                <a href="contact.html" class="nav-item nav-link" id="contacts">Contacts</a>
+                <!-- <div class="dropdown">Lang
+                    <a class="dropdown-toggle" href="#" id="Dropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                        <i class="flag-united-kingdom flag m-0"></i>
+                    </a>
+                
+                    <ul class="dropdown-menu" aria-labelledby="Dropdown">
+                        <li>
+                            <a class="dropdown-item" onclick="changeLanguage('en')" href="#"><i
+                                    class="flag-united-kingdom flag"></i>EN <i class="fa fa-check text-success ms-2"></i></a>
+                        </li>
+                        <a class="dropdown-item" onclick="changeLanguage('de')" href="#"><i class="flag-germany flag"></i>DE</a>
+                        </li>
+                    </ul>
+                </div>
+                 -->
+                <!-- Додайте цей код до вашого навігаційного меню або в інше відповідне місце -->
+                <div class="language-switcher">
+                    <button onclick="changeLanguage('en')">English</button>
+                    <button onclick="changeLanguage('de')">Deutsch</button>
+                </div>
+
+            </div>
+
+
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 pb-5">
+        <div class="owl-carousel header-carousel position-relative mb-5">
+            <div class="owl-carousel-item position-relative text-gold">
+                <div class="video-container">
+                    <video class="img-fluid" autoplay loop muted>
+                        <source src="vid/dji-0046.MP4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                    style="background: rgba(6, 3, 21, .5);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
+                                <h1 class="display-3 text-blue animated slideInDown mb-4" id="welcome">Welcome to </h1>
+                                <h1 class="display-3 text-gold text-primary animated slideInDown mb-4"
+                                    style="color: #decc80; display: inline-block;">V-Bahn</h1>
+                                <p class="fs-5 fw-medium text-gold mb-4 pb-2" id="carouselText">V-Bahn is your reliable
+                                    partner in
+                                    providing innovative solutions for railway infrastructure. Our mission is to deliver
+                                    cutting-edge products
+                                    that contribute to the modernization and development of the railway transport in
+                                    Ukraine.</p>
+                                <a href="about.html"
+                                    class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft blue-back"
+                                    id="aboutUs">More
+                                    about us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/pic2.png" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                    style="background: rgba(6, 3, 21, .5);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
+                                <!-- <h5 class="text-gold text-uppercase mb-3 animated slideInDown">Great
+                                    Solution</h5> -->
+                                <h1 class="display-3 text-gold animated slideInDown mb-4" id="ourProduction">Our
+                                    production</h1>
+
+                                <p class="fs-5 fw-medium text-gold mb-4 pb-2" id="productionText">Our
+                                    products</span> reflect the synergy of advanced technologies and engineering
+                                    expertise from companies...</p>
+                                <a href="products.html"
+                                    class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft" id="readmore">Read
+                                    more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid overflow-hidden py-5 px-lg-0">
+        <div class="container about py-5 px-lg-0">
+            <div class="row g-5 mx-lg-0">
+                <div class="col-lg-6 ps-lg-0 wow fadeInLeft" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/pic5.png"
+                            style="object-fit: cover;" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 about-text wow fadeInUp" data-wow-delay="0.3s">
+                    <h1 class="mb-5 text-gold" style="background-color: #15203d; text-align: center; " id="ourProducts">
+                    </h1>
+                    <a class="text-blue btn-slide mt-2" href="products.html"><i
+                            class="fa fa-arrow-right"></i><span></span></a>
+                    <p class="mb-5" id="productsText"><a class="text-blue btn-slide mt-2" href="products.html"
+                            style="display: inline-block;"><i class="fa fa-arrow-right"></i><span></span></a></p>
+
+
+                    <h1 class="mb-5 text-gold" style="background-color: #15203d;text-align: center;" id="ourValues">Our
+                        Values </h1>
+                    <a class="text-blue btn-slide mt-2" href="about.html"><i
+                            class="fa fa-arrow-right"></i><span></span></a>
+                    <p class="mb-5" id="ourvaluestext">Our values encompass innovation, excellence, and responsibility
+                        towards our
+                        community. We strive for environmentally friendly and sustainable solutions that promote the
+                        safety and comfort
+                        of all passenger and freight transportation. </p>
+
+                    <h1 class="mb-5 text-gold" style="background-color: #15203d; text-align: center;" id="ourTeam">Our
+                        Team </h1>
+                    <a class="text-blue btn-slide mt-2" href="about.html"><i
+                            class="fa fa-arrow-right"></i><span></span></a>
+                    <p class="mb-5" id="ourteamtext">Our team consists of highly skilled professionals united by the
+                        common goal of
+                        improving railway infrastructure and providing advantages for our clients. </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Contact Start -->
+    <div class="container-xxl py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <h1 class="mb-5 text-blue" id="contactUs">Contact us</h1>
+                    <p class="mb-5 text-blue" id="contactusText">If you are interested in our products or have any
+                        inquiries, please
+                        contact us using our contact information.</p>
+                    <div class="d-flex align-items-center">
+                        <i class="fa fa-headphones fa-2x flex-shrink-0 bg-primary p-3 text-gold"></i>
+                        <div class="ps-4">
+                            <h6 class="text-blue" id="callQuery">Call for any query!</h6>
+                            <h3 class="text-primary m-0">+380675433690</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="bg-light text-center p-5 wow fadeIn" data-wow-delay="0.5s">
+                        <form id="myForm">
+                            <div class="row g-3">
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" id="name" class="form-control border-0" placeholder="Your Name"
+                                        style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="email" id="email" class="form-control border-0"
+                                        placeholder="Your Email" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" id="mobile" class="form-control border-0"
+                                        placeholder="Your Mobile" style="height: 55px;">
+                                </div>
+                                <div class="col-12">
+                                    <textarea id="message" class="form-control border-0"
+                                        placeholder="Your text"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3 blue-back" type="button"
+                                        onclick="submitForm()">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-blue text-light footer pt-5 wow fadeIn" data-wow-delay="0.1s"
+        style="margin-top: 6rem;">
+        <div class="container py-5 text-center">
+            <div class="row g-5 justify-content-center align-items-center">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-gold mb-4" id="address">Address</h4>
+                    <div class="mb-2 text-gold">
+                        <p><i class="fa fa-map-marker-alt me-3"></i>Gotthardstrasse 26
+                            6300 Zug
+                        </p>
+                        <p><i class="fa fa-phone-alt me-3"></i>+41 76 245 02 08</p>
+                        <p><i class="fa fa-envelope me-3"></i>info@v-bahn.com</p>
+                    </div>
+                    <!-- <div class="d-flex justify-content-center pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="text-gold fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i
+                                    class="text-gold fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i
+                                    class="text-gold fab fa-linkedin-in"></i></a>
+                        </div> -->
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <img style="width: auto; height: 131px;" src="img/logo_gold.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0 text-gold" id="allRightsReserved">
+                        &copy; V-BAHN, All Right Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end text-gold">
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        Designed By <a class=" text-gold border-bottom " href="#">kirmen</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Оновіть ваш JavaScript код -->
+    <script>
+        // Перевірте, чи існує збережена мова у Local Storage при завантаженні сторінки
+        const savedLanguage = localStorage.getItem('selectedLanguage');
+        if (savedLanguage) {
+            changeLanguage(savedLanguage);
+        }
+
+        function changeLanguage(lang) {
+            const languageElements = {
+                'en': {
+                    'home': 'Home',
+                    'company': 'Company',
+                    'products': 'Products',
+                    'partners': 'Partners',
+                    'projects': 'Projects',
+                    'contacts': 'Contacts',
+                    'welcome': 'Welcome to',
+                    'welcome1': 'Welcome to',
+                    'aboutUs': 'More about us',
+                    'carouselText': 'V-Bahn is your reliable partner in providing innovative solutions for railway infrastructure. Our mission is to deliver cutting-edge products that contribute to the modernization and development of the railway transport in Ukraine.',
+                    'carouselText1': 'V-Bahn is your reliable partner in providing innovative solutions for railway infrastructure. Our mission is to deliver cutting-edge products that contribute to the modernization and development of the railway transport in Ukraine.',
+                    'greatSolution': 'Great Solution',
+                    'ourProduction': 'Our production',
+                    'productionText': 'Our products reflect the synergy of advanced technologies and engineering expertise from companies...',
+                    'ourProducts': 'Our Products',
+                    'productsText': 'We specialize in supplying a wide range of products, including fastenings, rails, sleepers, concrete structures, and much more. Our high-quality components ensure the reliability and efficiency of the railway infrastructure.',
+                    'ourValues': 'Our Values',
+                    'ourvaluestext': 'Our values encompass innovation, excellence, and responsibility towards our community. We strive for environmentally friendly and sustainable solutions that promote the safety and comfort of all passenger and freight transportation.',
+                    'ourTeam': 'Our Team',
+                    'ourteamtext': 'Our team consists of highly skilled professionals united by the common goal of improving railway infrastructure and providing advantages for our clients.',
+                    'contactUs': 'Contact us',
+                    'contactusText': 'If you are interested in our products or have any inquiries, please contact us using our contact information.',
+                    'callQuery': 'Call for any query!',
+                    'phoneNumber': '+380675433690',
+                    'yourName': 'Your Name',
+                    'yourEmail': 'Your Email',
+                    'yourMobile': 'Your Mobile',
+                    'yourText': 'Your text',
+                    'submit': 'Submit',
+                    'address': 'Address',
+                    'addressDetails': '123 Street, Zurich, Switzerland',
+                    'footerEmail': 'info@v-bahn.com',
+                    'allRightsReserved': '© V-BAHN, All Right Reserved.',
+                    'designedBy': 'Designed By',
+                    'readmore': 'Read more'
+                },
+                'de': {
+                    'home': 'Startseite',
+                    'company': 'Unternehmen',
+                    'products': 'Produkte',
+                    'partners': 'Partner',
+                    'projects': 'Projekte',
+                    'contacts': 'Kontakte',
+                    'welcome': 'Herzlich willkommen bei',
+                    'welcome1': 'Herzlich willkommen bei',
+                    'aboutUs': 'Mehr über uns',
+                    'carouselText': 'V-Bahn ist Ihr zuverlässiger Partner für innovative Lösungen im Bereich der Eisenbahninfrastruktur. Unsere Mission ist es, hochmoderne Produkte bereitzustellen, die zur Modernisierung und Entwicklung des Schienenverkehrs in der Ukraine beitragen.',
+                    'carouselText1': 'V-Bahn ist Ihr zuverlässiger Partner für innovative Lösungen im Bereich der Eisenbahninfrastruktur. Unsere Mission ist es, hochmoderne Produkte bereitzustellen, die zur Modernisierung und Entwicklung des Schienenverkehrs in der Ukraine beitragen.',
+                    'greatSolution': 'Große Lösung',
+                    'ourProduction': 'Unsere Produkte',
+                    'productionText': 'Unsere Produkte spiegeln die Synergie fortschrittlicher Technologien und Ingenieurkompetenz von Unternehmen wider...',
+                    'ourProducts': 'Unsere Produkte',
+                    'productsText': 'Wir sind spezialisiert auf die Lieferung einer breiten Palette von Produkten, darunter Befestigungen, Schienen, Schwellen, Betonkonstruktionen und vieles mehr. Unsere hochwertigen Komponenten gewährleisten die Zuverlässigkeit und Effizienz der Eisenbahninfrastruktur.',
+                    'ourValues': 'Unsere Werte',
+                    'ourvaluestext': 'Unsere Werte umfassen Innovation, Exzellenz und Verantwortung gegenüber unserer Gemeinschaft. Wir streben nach umweltfreundlichen und nachhaltigen Lösungen, die die Sicherheit und den Komfort aller Personen- und Gütertransporte fördern.',
+                    'ourTeam': 'Unser Team',
+                    'ourteamtext': 'Unser Team besteht aus hochqualifizierten Fachleuten, die durch das gemeinsame Ziel vereint sind, die Eisenbahninfrastruktur zu verbessern und Vorteile für unsere Kunden zu schaffen.',
+                    'contactUs': 'Kontaktieren Sie uns',
+                    'contactusText': 'Wenn Sie an unseren Produkten interessiert sind oder Fragen haben, kontaktieren Sie uns bitte unter Verwendung unserer Kontaktinformationen.',
+                    'callQuery': 'Rufen Sie bei jeder Anfrage an!',
+                    'phoneNumber': '+380675433690',
+                    'yourName': 'Ihr Name',
+                    'yourEmail': 'Ihre E-Mail',
+                    'yourMobile': 'Ihr Mobiltelefon',
+                    'yourText': 'Ihr Text',
+                    'submit': 'Einreichen',
+                    'address': 'Adresse',
+                    'addressDetails': '123 Straße, Zürich, Schweiz',
+                    'footerEmail': 'info@v-bahn.com',
+                    'allRightsReserved': '© V-BAHN, Alle Rechte vorbehalten.',
+                    'designedBy': 'Entworfen von',
+                    'readmore': 'Mehr lesen'
+                }
+                // ... можливо, інші мови
+            };
+
+
+            const elements = Object.keys(languageElements[lang]);
+            elements.forEach(element => {
+                const targetElement = document.getElementById(element);
+                if (targetElement) {
+                    targetElement.innerText = languageElements[lang][element];
+                }
+            });
+
+            // Збережіть вибрану мову у Local Storage
+            localStorage.setItem('selectedLanguage', lang);
+        }
+    </script>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init("L4ZKJ1vxqTC4qIAYB");
+
+        function submitForm() {
+            var templateParams = {
+                name: document.getElementById("name").value,
+                email: document.getElementById("email").value,
+                mobile: document.getElementById("mobile").value,
+                message: document.getElementById("message").value
+            };
+
+            emailjs.send("service_1n8dvlz", "template_cihfka7", templateParams)
+                .then(function (response) {
+                    console.log("Sent successfully:", response);
+                    alert("Message sent successfully!");
+                }, function (error) {
+                    console.log("Failed to send:", error);
+                    alert("Failed to send message. Please try again later.");
+                });
+        }
+    </script>
+
+
+
+
+
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
