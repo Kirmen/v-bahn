@@ -1,26 +1,15 @@
-<script>
-    // Отримайте мову з параметра запиту
-    const urlParams = new URLSearchParams(window.location.search);
-    const langParam = urlParams.get('lang');
-
-    // Якщо мова вказана у параметрі запиту, встановіть її
-    if (langParam) {
-        changeLanguage(langParam);
-    }
-</script>
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>V-BAHN : Products</title>
+    <title id='title-products'>V-BAHN : Products</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/browser.png" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,6 +30,17 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <script>
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const langParam = urlParams.get('lang');
+
+
+        if (langParam) {
+            changeLanguage(langParam);
+        }
+    </script>
 </head>
 
 <body>
@@ -73,21 +73,7 @@
                 <a href="partners.html" class="nav-item nav-link" id="partners">Partners</a>
                 <a href="projects.html" class="nav-item nav-link" id="projects">Projects</a>
                 <a href="contact.html" class="nav-item nav-link" id="contacts">Contacts</a>
-                <!-- <div class="dropdown">Lang
-                        <a class="dropdown-toggle" href="#" id="Dropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
-                            <i class="flag-united-kingdom flag m-0"></i>
-                        </a>
-                    
-                        <ul class="dropdown-menu" aria-labelledby="Dropdown">
-                            <li>
-                                <a class="dropdown-item" onclick="changeLanguage('en')" href="#"><i
-                                        class="flag-united-kingdom flag"></i>EN <i class="fa fa-check text-success ms-2"></i></a>
-                            </li>
-                            <a class="dropdown-item" onclick="changeLanguage('de')" href="#"><i class="flag-germany flag"></i>DE</a>
-                            </li>
-                        </ul>
-                    </div>
-                     -->
+                
 
 
             </div>
@@ -99,7 +85,7 @@
 
 
     <!-- Page Header Start -->
-    <div class="container-fluid page-header py-5" style="margin-bottom: 6rem;">
+    <div class="container-fluid page-header-products py-5" style="margin-bottom: 6rem;">
         <div class="container py-5">
             <h1 class="display-3 text-gold mb-3 animated slideInDown" id="ourprod">Our products</h1>
             <nav aria-label="breadcrumb animated slideInDown">
@@ -120,90 +106,13 @@
                 <h3 class="mb-5 text-blue" id="apolo">
                     <span class=" text-primary text-gold">Apologies</span> for the inconvenience.
                     This page is currently under development, and we are working to enhance it. Please
-                    check back later .
+                    check back later.
                     <i class="fa fa-spinner fa-spin" style="font-size:24px;"></i>
                 </h3>
             </div>
         </div>
     </div>
-    <!-- <div class="container-xxl py-5">
-        <div class="container py-5"> -->
-    <!-- <div class="wow fadeInUp" data-wow-delay="0.1s">
-                <h3 class="mb-5 text-blue"><span class=" text-primary text-gold">Apologies</span> for the inconvenience.
-                    This page is currently under development, and we are working to enhance it. Please
-                    check back later...</h3>
-            </div> -->
-    <!-- <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h1 class="mb-5 text-blue" style="background-color: #decc80;">Products in track technology</h1>
-            </div> -->
-    <!-- <div class="row g-4">
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="price-item">
-                        <div class="border-bottom p-4 mb-4 text-center">
-                            <h2 class="mb-1 text-blue" style="background-color: #decc80;">Products in track technology
-                            </h2>
-                        </div>
-                        <div class="p-4 pt-0 text-center">
-                            <img src="img/p1.jpg" alt="" style="margin: 0 auto;">
-                        </div>
-                        <a class="btn-slide mt-2" href="track_technology.html"><i
-                                class="fa fa-arrow-right"></i><span>Details</span></a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="price-item">
-                        <div class="border-bottom p-4 mb-4 text-center">
-                            <h2 class="mb-1 text-blue" style="background-color: #decc80; height: 74.94px;">Product overview switch</h2>
-                        </div>
-                        <div class="p-4 pt-0 text-center">
-                            <img src="img/p1.jpg" alt="" style="margin: 0 auto; max-width: 100%; height: auto;">
-                        </div>
-                        <a class="btn-slide mt-2" href="product_overview_switch_technology.html"><i class="fa fa-arrow-right"></i><span>Details</span></a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="price-item">
-                        <div class="border-bottom p-4 mb-4 text-center">
-                            <h2 class="mb-1 text-blue" style="background-color: #decc80; height: 74.94px;">Rails</h2>
-                        </div>
-                        <div class="p-4 pt-0 text-center">
-                            <img src="img/r1.jpg" alt="" style="margin: 0 auto; max-width: 100%; height: 205px;">
-                        </div>
-                        <a class="btn-slide mt-2" href="rails.html"><i class="fa fa-arrow-right"></i><span>Details</span></a>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="price-item">
-                        <div class="border-bottom p-4 mb-4 text-center">
-                            <h2 class="mb-1 text-blue" style="background-color: #decc80;">Sleepers and beams
-                            </h2>
-                        </div>
-                        <div class="p-4 pt-0 text-center">
-                            <img src="img/p1.jpg" alt="" style="margin: 0 auto;">
-                        </div>
-                        <a class="btn-slide mt-2" href="sleepers_and_beams.html"><i
-                                class="fa fa-arrow-right"></i><span>Details</span></a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="price-item">
-                        <div class="border-bottom p-4 mb-4 text-center">
-                            <h2 class="mb-1 text-blue" style="background-color: #decc80;">Rubber products
-                            </h2>
-                        </div>
-                        <div class="p-4 pt-0 text-center">
-                            <img src="img/p1.jpg" alt="" style="margin: 0 auto;">
-                        </div>
-                        <a class="btn-slide mt-2" href="rubber_products.html"><i
-                                class="fa fa-arrow-right"></i><span>Details</span></a>
-                    </div>
-                </div>
-            </div> -->
-
-    <!-- </div>
-    </div>
-    </div> -->
+    
     <!-- Products End -->
 
 
@@ -227,14 +136,6 @@
                         <p><i class="fa fa-phone-alt me-3"></i>+41 76 245 02 08</p>
                         <p><i class="fa fa-envelope me-3"></i>info@v-bahn.com</p>
                     </div>
-                    <!-- <div class="d-flex justify-content-center pt-2">
-                                    <a class="btn btn-outline-light btn-social" href=""><i class="text-gold fab fa-twitter"></i></a>
-                                    <a class="btn btn-outline-light btn-social" href=""><i
-                                            class="text-gold fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                                    <a class="btn btn-outline-light btn-social" href=""><i
-                                            class="text-gold fab fa-linkedin-in"></i></a>
-                                </div> -->
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="position-relative mx-auto" style="max-width: 400px;">
@@ -252,8 +153,9 @@
                         &copy; V-BAHN, All Right Reserved.
                     </div>
                     <div class="col-md-6 text-center text-md-end text-gold">
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a class=" text-gold border-bottom " href="#">kirmen</a>
+                        
+                        Designed By <a class=" text-gold border-bottom "
+                            href="https://www.linkedin.com/in/kyrylo-dyachenko-7b1240257">kirmen</a>
                     </div>
                 </div>
             </div>
@@ -276,7 +178,7 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
     <script>
-        // Перевірте, чи існує збережена мова у Local Storage при завантаженні сторінки
+        
         const savedLanguage = localStorage.getItem('selectedLanguage');
         if (savedLanguage) {
             changeLanguage(savedLanguage);
@@ -309,6 +211,7 @@
                     'designedBy': 'Designed By'
                 },
                 'de': {
+                    'title-products': 'V-BAHN: Produkte',
                     'home': 'Startseite',
                     'company': 'Unternehmen',
                     'home1': 'Startseite',
@@ -343,7 +246,7 @@
                 }
             });
 
-            // Збережіть вибрану мову у Local Storage
+            
             localStorage.setItem('selectedLanguage', lang);
         }
     </script>

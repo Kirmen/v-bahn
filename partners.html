@@ -1,26 +1,15 @@
-<script>
-    // Отримайте мову з параметра запиту
-    const urlParams = new URLSearchParams(window.location.search);
-    const langParam = urlParams.get('lang');
-
-    // Якщо мова вказана у параметрі запиту, встановіть її
-    if (langParam) {
-        changeLanguage(langParam);
-    }
-</script>
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>V-BAHN : Partners</title>
+    <title id='title-partners'>V-BAHN : Partners</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/browser.png" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,6 +30,17 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <script>
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const langParam = urlParams.get('lang');
+
+
+        if (langParam) {
+            changeLanguage(langParam);
+        }
+    </script>
 </head>
 
 <body>
@@ -64,41 +64,26 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-    
-    
+
+
                 <a href="index.html" class="nav-item nav-link" id="home">Home</a>
                 <a href="about.html" class="nav-item nav-link" id="company">Company</a>
-                <!-- <a href="about.html?lang=de" class="nav-item nav-link">Unternehmen</a> -->
                 <a href="products.html" class="nav-item nav-link" id="products">Products</a>
                 <a href="partners.html" class="nav-item nav-link active" id="partners">Partners</a>
                 <a href="projects.html" class="nav-item nav-link" id="projects">Projects</a>
                 <a href="contact.html" class="nav-item nav-link" id="contacts">Contacts</a>
-                <!-- <div class="dropdown">Lang
-                            <a class="dropdown-toggle" href="#" id="Dropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
-                                <i class="flag-united-kingdom flag m-0"></i>
-                            </a>
-                        
-                            <ul class="dropdown-menu" aria-labelledby="Dropdown">
-                                <li>
-                                    <a class="dropdown-item" onclick="changeLanguage('en')" href="#"><i
-                                            class="flag-united-kingdom flag"></i>EN <i class="fa fa-check text-success ms-2"></i></a>
-                                </li>
-                                <a class="dropdown-item" onclick="changeLanguage('de')" href="#"><i class="flag-germany flag"></i>DE</a>
-                                </li>
-                            </ul>
-                        </div>
-                         -->
-    
-    
+
+
+
             </div>
-    
-    
+
+
         </div>
     </nav>
     <!-- Navbar End -->
 
     <!-- Page Header Start -->
-    <div class="container-fluid page-header py-5" style="margin-bottom: 6rem;">
+    <div class="container-fluid page-header-partners py-5" style="margin-bottom: 6rem;">
         <div class="container py-5">
             <h1 class="display-3 text-gold mb-3 animated slideInDown" id="ourp">Our partners</h1>
             <nav aria-label="breadcrumb animated slideInDown">
@@ -109,17 +94,18 @@
             </nav>
         </div>
     </div>
-
+    <!-- Page Header End -->
 
     <!-- Partners Start -->
     <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="">
                 &nbsp;
-                <h3 class="mb-0 text-blue" id="partnersText"><span class=" text-blue text-primary" style="background-color: #decc80;" >V-Bahn</span>
-                     AG collaborates with global manufacturers of innovative products for
+                <h3 class="mb-0 text-blue" id="partnersText"><span class=" text-blue text-primary"
+                        style="background-color: #decc80;">V-Bahn</span>
+                    AG collaborates with global manufacturers of innovative products for
                     railway infrastructure and supplies them to
-                    the territory of Ukraine. Our partnerships with these recognized industry leaders allow us to offer
+                    the accross Ukraine. Our partnerships with these recognized industry leaders allow us to offer
                     advanced
                     technologies and solutions to optimize railway transportation in Ukraine.</h3>
                 <h3 class="mb-0 text-gold" id="partnersText1">Among them:</h3>
@@ -137,7 +123,8 @@
                             <p class="m-0" id="swith">Switzerland</p>
                         </div>
                     </div>
-                    <p class="mb-0" id="schwihag">Schwihag is a recognized leader in the production and supply of innovative solutions
+                    <p class="mb-0" id="schwihag">Schwihag is a recognized leader in the production and supply of
+                        innovative solutions
                         for railway infrastructure. They
                         specialize in the manufacturing of fastening systems, rails, sleepers, and other components that
                         ensure the safety and
@@ -158,13 +145,14 @@
                             <p class="m-0">Ukraine</p>
                         </div>
                     </div>
-                    <p class="mb-0" id="ukrrail">Ukrainian Railway is a key player in the development and maintenance of the railway
+                    <p class="mb-0" id="ukrrail">Ukrainian Railway is a key player in the development and maintenance of
+                        the railway
                         system in Ukraine. Their experience
                         and expertise assist us in implementing projects with high efficiency and precision,
                         contributing to the development of
                         the railway transport in the country.</p>
                 </div>
-                
+
                 <div class="testimonial-item p-4 my-5">
                     <i class="fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
                     <div class="d-flex align-items-end mb-4">
@@ -177,7 +165,8 @@
                             <p class="m-0">Ukraine</p>
                         </div>
                     </div>
-                    <p class="mb-0" id="gsi">GSI Group is a manufacturer of prestressed concrete sleepers and beams for use in
+                    <p class="mb-0" id="gsi">GSI Group is a manufacturer of prestressed concrete sleepers and beams for
+                        use in
                         railway infrastructure. The company
                         has extensive experience in producing high-quality concrete structures that meet the
                         requirements of modern standards
@@ -195,7 +184,8 @@
                             <p class="m-0">Ukraine</p>
                         </div>
                     </div>
-                    <p class="mb-0" id="kyivguma">We also have the honor of partnering with Kyivguma, a leading manufacturer of rubber
+                    <p class="mb-0" id="kyivguma">We also have the honor of partnering with Kyivguma, a leading
+                        manufacturer of rubber
                         products and components in the
                         region. Their high-quality rubber materials are used in various industries, including railway
                         infrastructure. Our
@@ -203,33 +193,16 @@
                         quality and durability
                         of our projects.</p>
                 </div>
-                <!-- <div class="testimonial-item p-4 my-5">
-                    <i class="fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
-                    <div class="d-flex align-items-end mb-4">
-                        <a href="https://britishsteel.co.uk/"><img class="img-fluid flex-shrink-0" src="img/BS_alt.svg"
-                                style="width: auto; height: 80px;"></a>
-                        <div class="ms-4">
-                            <a href="https://britishsteel.co.uk/">
-                                <h5 class="mb-1">British Steel</h5>
-                            </a>
-                            <p class="m-0">Great Britain</p>
-                        </div>
-                    </div>
-                    <p class="mb-0">British Steel is one of the leading manufacturers of steel products for various
-                        industries, including the railway
-                        sector. Their high-quality rails and other steel products help enhance the durability and
-                        reliability of railway
-                        infrastructure. Collaboration with British Steel enables us to ensure high quality and longevity
-                        of our projects.</p>
-                </div> -->
+
             </div>
         </div>
     </div>
-    <!-- Testimonial End -->
+    <!-- Partners End -->
 
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-blue text-light footer pt-5 wow fadeIn" data-wow-delay="0.1s" style="margin-top: 6rem;">
+    <div class="container-fluid bg-blue text-light footer pt-5 wow fadeIn" data-wow-delay="0.1s"
+        style="margin-top: 6rem;">
         <div class="container py-5 text-center">
             <div class="row g-5 justify-content-center align-items-center">
                 <div class="col-lg-3 col-md-6">
@@ -241,14 +214,7 @@
                         <p><i class="fa fa-phone-alt me-3"></i>+41 76 245 02 08</p>
                         <p><i class="fa fa-envelope me-3"></i>info@v-bahn.com</p>
                     </div>
-                    <!-- <div class="d-flex justify-content-center pt-2">
-                                        <a class="btn btn-outline-light btn-social" href=""><i class="text-gold fab fa-twitter"></i></a>
-                                        <a class="btn btn-outline-light btn-social" href=""><i
-                                                class="text-gold fab fa-facebook-f"></i></a>
-                                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                                        <a class="btn btn-outline-light btn-social" href=""><i
-                                                class="text-gold fab fa-linkedin-in"></i></a>
-                                    </div> -->
+
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="position-relative mx-auto" style="max-width: 400px;">
@@ -257,8 +223,8 @@
                 </div>
             </div>
         </div>
-    
-    
+
+
         <div class="container">
             <div class="copyright">
                 <div class="row">
@@ -266,8 +232,9 @@
                         &copy; V-BAHN, All Right Reserved.
                     </div>
                     <div class="col-md-6 text-center text-md-end text-gold">
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a class=" text-gold border-bottom " href="#">kirmen</a>
+
+                        Designed By <a class=" text-gold border-bottom "
+                            href="https://www.linkedin.com/in/kyrylo-dyachenko-7b1240257">kirmen</a>
                     </div>
                 </div>
             </div>
@@ -290,7 +257,7 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
     <script>
-        // Перевірте, чи існує збережена мова у Local Storage при завантаженні сторінки
+
         const savedLanguage = localStorage.getItem('selectedLanguage');
         if (savedLanguage) {
             changeLanguage(savedLanguage);
@@ -310,7 +277,7 @@
 
                     'vBahn': 'V-Bahn',
 
-                    
+
 
 
 
@@ -322,6 +289,7 @@
                     'designedBy': 'Designed By'
                 },
                 'de': {
+                    'title-partners': 'V-BAHN: Partner',
                     'home': 'Startseite',
                     'company': 'Unternehmen',
                     'home1': 'Startseite',
@@ -331,19 +299,19 @@
                     'contacts': 'Kontakte',
                     'vBahn': 'V-Bahn',
 
-                    'ourp':'Unsere Partner',
-                    'partn':'Partner',
+                    'ourp': 'Unsere Partner',
+                    'partn': 'Partner',
 
-                    'schwihag':'Schwihag ist ein anerkannter Marktführer in der Herstellung und Lieferung innovativer Lösungen für die Eisenbahninfrastruktur. Sie sind spezialisiert auf die Herstellung von Befestigungssystemen, Schienen, Schwellen und anderen Komponenten, die die Sicherheit und Effizienz des Zugbetriebs gewährleisten. Unsere Zusammenarbeit mit Schwihag ermöglicht es uns, modernste Technologien zur Optimierung des Bahnverkehrs zu nutzen.',
-                    'ukrrail':'Die Ukrainische Eisenbahn ist ein wichtiger Akteur in der Entwicklung und Wartung des Eisenbahnsystems in der Ukraine. Ihre Erfahrung und Expertise unterstützen uns bei der Umsetzung von Projekten mit hoher Effizienz und Präzision und tragen zur Entwicklung des Eisenbahntransports im Land bei.',
-                    'kyivguma':'Wir haben auch die Ehre, mit Kyivguma zusammenzuarbeiten, einem führenden Hersteller von Gummiwaren und Komponenten in der Region. Ihre hochwertigen Gummimaterialien werden in verschiedenen Branchen eingesetzt, einschließlich der Eisenbahninfrastruktur. Unsere Partnerschaft mit Kyivguma ermöglicht es uns, zuverlässige und innovative Materialien zur Verbesserung der Qualität und Langlebigkeit unserer Projekte zu nutzen.',
+                    'schwihag': 'Schwihag ist ein anerkannter Marktführer in der Herstellung und Lieferung innovativer Lösungen für die Eisenbahninfrastruktur. Sie sind spezialisiert auf die Herstellung von Befestigungssystemen, Schienen, Schwellen und anderen Komponenten, die die Sicherheit und Effizienz des Zugbetriebs gewährleisten. Unsere Zusammenarbeit mit Schwihag ermöglicht es uns, modernste Technologien zur Optimierung des Bahnverkehrs zu nutzen.',
+                    'ukrrail': 'Die Ukrainische Eisenbahn ist ein wichtiger Akteur in der Entwicklung und Wartung des Eisenbahnsystems in der Ukraine. Ihre Erfahrung und Expertise unterstützen uns bei der Umsetzung von Projekten mit hoher Effizienz und Präzision und tragen zur Entwicklung des Eisenbahntransports im Land bei.',
+                    'kyivguma': 'Wir haben auch die Ehre, mit Kyivguma zusammenzuarbeiten, einem führenden Hersteller von Gummiwaren und Komponenten in der Region. Ihre hochwertigen Gummimaterialien werden in verschiedenen Branchen eingesetzt, einschließlich der Eisenbahninfrastruktur. Unsere Partnerschaft mit Kyivguma ermöglicht es uns, zuverlässige und innovative Materialien zur Verbesserung der Qualität und Langlebigkeit unserer Projekte zu nutzen.',
                     'gsi': 'GSI Group ist ein Hersteller von Spannbeton-Schwellen und Trägern für die Verwendung in der Eisenbahninfrastruktur. Das Unternehmen verfügt über umfangreiche Erfahrung in der Herstellung hochwertiger Betonkonstruktionen, die den Anforderungen moderner Standards und Technologien entsprechen.',
-                    'swith':'Schweiz',
+                    'swith': 'Schweiz',
 
-                    'partnersText':'Die V-Bahn AG arbeitet mit globalen Herstellern innovativer Produkte für die Eisenbahninfrastruktur zusammen und liefert sie in das Gebiet der Ukraine. Unsere Partnerschaften mit diesen anerkannten Branchenführern ermöglichen es uns, fortschrittliche Technologien und Lösungen zur Optimierung des Eisenbahnverkehrs in der Ukraine anzubieten.',
+                    'partnersText': 'Die V-Bahn AG arbeitet mit globalen Herstellern innovativer Produkte für die Eisenbahninfrastruktur zusammen und liefert sie in das Gebiet der Ukraine. Unsere Partnerschaften mit diesen anerkannten Branchenführern ermöglichen es uns, fortschrittliche Technologien und Lösungen zur Optimierung des Eisenbahnverkehrs in der Ukraine anzubieten.',
                     'partnersText1': 'Darunter:',
 
-                    
+
                     'address': 'Adresse',
                     'addressDetails': '123 Straße, Zürich, Schweiz',
                     'footerEmail': 'info@v-bahn.com',
@@ -362,7 +330,7 @@
                 }
             });
 
-            // Збережіть вибрану мову у Local Storage
+
             localStorage.setItem('selectedLanguage', lang);
         }
     </script>

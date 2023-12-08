@@ -559,14 +559,91 @@ btn-check:focus + .btn-primary,
   }
 }
 
-
 #welcome {
-    display: inline-block;
+  display: inline-block;
 }
 
 #vBahn {
-    display: inline-block;
-    color: #decc80;
+  display: inline-block;
+  color: #decc80;
 }
 
+.container-fluid1 {
+  height: 100vh;
+  display: flex;
+}
 
+.video-container {
+  display: flex;
+  height: 100%;
+}
+
+.owl-carousel {
+  display: flex;
+  height: 100%;
+}
+
+.owl-item {
+  height: 100%;
+}
+
+.owl-stage {
+  height: 100%;
+}
+
+.owl-stage-outer {
+  height: 100%;
+}
+
+.owl-carousel-item {
+  display: flex;
+  height: 100%;
+}
+
+.lang-icon {
+  background-color: #15203d;
+  border: none;
+}
+
+.language-switcher {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Це вирівнює кнопки по центру горизонталі */
+}
+
+.language-switcher button {
+  margin-bottom: 5px; /* Додає невеликий відступ між кнопками */
+}
+
+.language-switcher button img {
+  border: none;
+}
+
+.page-header-about {
+  background: linear-gradient(rgba(6, 3, 21, 0.5), rgba(6, 3, 21, 0.5)),
+    url(../img/about-pic.png) center center no-repeat;
+}
+
+.page-header-products {
+  background: linear-gradient(rgba(6, 3, 21, 0.5), rgba(6, 3, 21, 0.5)),
+    url(../img/pic3.png) center center no-repeat;
+  background-size: cover;
+}
+
+.page-header-partners {
+  background: linear-gradient(rgba(6, 3, 21, 0.5), rgba(6, 3, 21, 0.5)),
+    url(../img/pic5.png) center center no-repeat;
+  background-size: cover;
+}
+
+.page-header-projects {
+  background: linear-gradient(rgba(6, 3, 21, 0.5), rgba(6, 3, 21, 0.5)),
+    url(../img/project-pic1.png) center center no-repeat;
+  background-size: cover;
+}
+
+.page-header-contacts {
+  background: linear-gradient(rgba(6, 3, 21, 0.5), rgba(6, 3, 21, 0.5)),
+    url(../img/pic3.png) center center no-repeat;
+  background-size: cover;
+}
